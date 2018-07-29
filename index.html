@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zheng Luo - CV</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta charset="UTF-8"> 
+
+<link type="text/css" rel="stylesheet" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv">
+	<div class="mainDetails">
+		
+		<div id="name">
+			<h1 class="quickFade delayOne">Zheng Luo</h1>
+			<h2 class="quickFade delayTwo"><small>Seeking for</small> <span id="position">SDE Intern</span><small> opportunity in</small> Summer 2019</h2>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayThree">
+			<ul>
+				<li>Email: <a href="mailto:vicluo96@gmail.com" target="_blank">vicluo96@gmail.com</a></li>
+				<li>Github: <a href="https://github.com/htfy96" target="_blank">@htfy96</a></li>
+				<li>Blog (Chinese): <a href="http://www.intmainreturn0.com">www.intmainreturn0.com</a></li>
+				<li>Phone (Chinese): +8615800333680</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFour">
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Internships</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>Dev Intern at Pygmal Technologies</h2>
+					<p class="subDetails">Feb. 2017 - Jan. 2018</p>
+					<p>Pygmal Technologies is a successful startup founded by an ex-Googler. Responsible for maintaining and adding new functionalities for a VR desktop environment, <a href="https://getspace.io/" target="_blank">SPACE</a>, which involves integration with CEF (Chromium Embedded Framework) as well as rendering using C++ and DirectX. Also implemented and optimized a ray tracer from scratch based on Embree, which outputs 720p results for a scene with ~300k faces on a workstation in real-time. </p>
+				</article>
+				
+				<article>
+					<h2>Dev Intern at Ant Financial, Alibaba Group</h2>
+					<p class="subDetails">Jun. 2016 - Sept. 2016</p>
+					<p>Mainly responsible for developing an internal Docker-based container platform, Ant Container Service (ACS). Spent most time implementing an orchestration module similar to docker-compose with Go.</p>
+				</article>
+				
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Projects & Contribution</h1>
+			</div>
+			<div class="sectionContent">
+				<article>
+					<h2><a href="https://github.com/sjtu-ai-go/go-ai" target="_blank">Go AI</a></h2> 
+					<p class="subDetails">Leader of a group of four, class project</p>
+					<p>Implemented a Go AI based on AlphaGo's first paper with UCT tree search and a policy neural network. Responsible for board class, UCT search as well as communication module with Protobuf-based serialization in C++ and Python. Beated Facebook's DarkForest(1st ver.) and GNU Go. </p>
+				</article>
+				
+				<article>
+					<h2><a href="https://github.com/htfy96/gsoc-static-map" target="_blank">Compile-time Static Map in C++ for Boost library</a></h2>
+					<p class="subDetails">Individual contribution to open-source project, as a proposal for Boost GSoC 2017</p>
+					<p>Implemented a <code>static_map</code> class, which supports compile-time lookup with a given key, for C++ Boost library</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Awards & Publication</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="awards">
+					<li>Ranked 72nd in Google CodeJam Kickstart Round D</li>
+					<li>Conference paper(coauthor): <em>BAHS: A Bandwidth-Aware Heterogeneous Scheduling Approach for SDN-based Cluster Systems</em> on ISPA 2017</li>
+					<li>Patent: <em>An Analysis on Academic Big Data Based on Paper References</em></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Key Skills</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>Writing production-level C++14/17</li>
+					<li>Linux usage and system programming</li>
+					<li>Micro-optimization and profiling</li>
+					<li>Debugging using GDB</li>
+					<li>Writing Go</li>
+					<li>Docker usage and implementation</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+			
+			<div class="sectionContent education">
+				<article>
+					<h2>M.S. in Computer Science at UC San Diego</h2>
+					<p class="subDetails">Expected to graduate in fall/winter 2019</p>
+				</article>
+				
+				<article>
+					<h2>B.E. of Computer Science at Shanghai Jiaotong University</h2>
+					<p class="subDetails">2014 - 2018, top 30% GPA</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+	</div>
+</div>
+<script type="text/javascript">
+'use strict';
+// https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+if (getParameterByName('position')) {
+	document.getElementById('position').innerText = getParameterByName('position');
+}
+</script>
+</body>
+</html>
