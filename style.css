@@ -153,7 +153,6 @@ section:first-child {
 .subDetails {
 	font-size: 0.8em;
 	font-style: italic;
-	margin-bottom: 3px;
 }
 
 .keySkills {
@@ -322,6 +321,19 @@ p:not(.subDetails) {
 	100% {
 		opacity: 1;
 	}
+}
+
+.align {
+	display: flex;
+	align-items: center;
+}
+
+.align .align-main {
+	flex: 1;
+}
+
+.align .align-right {
+	text-align: right;
 }
 
 .instaFade {

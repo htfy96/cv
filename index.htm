@@ -43,12 +43,18 @@
 			
 			<div class="sectionContent education">
 				<article>
-					<h2>M.S. in Computer Science at UC San Diego</h2>
+					<div class="align">
+						<h2 class="align-main">M.S. in Computer Science at UC San Diego</h2>
+						<div class="align-right subDetails">the United States</div>
+					</div>
 					<p class="subDetails">Sept. 2018 - Dec. 2019</p>
 				</article>
 				
 				<article>
-					<h2>B.E. in Computer Science at Shanghai Jiaotong University</h2>
+					<div class="align">
+						<h2 class="align-main">B.E. in Computer Science at Shanghai Jiaotong University</h2>
+						<div class="align-right subDetails">China</div>
+					</div>
 					<p class="subDetails"> Sept. 2014 - Jun. 2018, GPA 3.7/4.3 @ Top 30%</p>
 					<p>Relavant coursework: Computer Architecture, Computer Networks, Database, Operating System</p>
 				</article>
@@ -63,17 +69,23 @@
 			
 			<div class="sectionContent">
 				<article>
-					<h2>Dev Intern at Pygmal Technologies</h2>
+					<div class="align">
+						<h2 class="align-main">Dev Intern at Pygmal Technologies</h2>
+						<div class="align-right subDetails">China</div>
+					</div>
 					<p class="subDetails">Feb. 2017 - Jan. 2018</p>
 					<ul>
 						<li>Developed a desktop environment for VR devices & a CPU-based real-time ray tracer</li>
 						<li>Involved with Chromium Embedded Framework (CEF), DirectX, Embree. Used perf and cachegrind to analyze and optimize performance through manual vectorization/precomputation/interface refactor</li>
-						<li>Improved the fps of VRDE by 60%. Managed to make the ray-tracer render scenes in 720p/60fps.</li>
+						<li>Improved the fps of VRDE by 60%. Managed to make the ray-tracer render scenes in 720p/60fps</li>
 					</ul>
 				</article>
 				
 				<article>
-					<h2>Dev Intern at Ant Financial, Alibaba Group</h2>
+					<div class="align">
+						<h2 class="align-main">Dev Intern at Ant Financial, Alibaba Group</h2>
+						<div class="align-right subDetails">China</div>
+					</div>
 					<p class="subDetails">Jun. 2016 - Sept. 2016</p>
 					<ul>
 						<li>Contributed to an internal Docker-based container platform, Ant Container Service</li>
@@ -95,19 +107,16 @@
 					<h2><a href="https://github.com/sjtu-ai-go/go-ai" target="_blank">Go AI</a></h2> 
 					<p class="subDetails">Leader of a group of four, class project</p>
 					<ul>
-						<li>Implemented a Go AI based on AlphaGo's first paper with UCT tree search and a policy neural network.</li>
+						<li>Implemented a Go AI based on AlphaGo's first paper with UCT tree search and a policy neural network</li>
 						<li>Responsible for board class, UCT search as well as communication module with Protobuf-based serialization in C++ and Python.</li>
-						<li>Beated Facebook's DarkForest(1st ver.) and GNU Go.</li>
+						<li>Beated Facebook's DarkForest(1st ver.) and GNU Go</li>
 					</ul>
 				</article>
 				
 				<article>
 					<h2><a href="https://github.com/htfy96/gsoc-static-map" target="_blank">Compile-time Static Map in C++ for Boost library</a></h2>
 					<p class="subDetails">Individual contribution to open-source project, as a proposal for Boost GSoC 2017</p>
-					<ul>
-						<li>Implemented a <code>static_map</code> class for C++ Boost library</li>
-						<li>This library supports compile-time lookup with a given key with no runtime overhead.</li>
-					</ul>
+					<p>Implemented a <code>static_map</code> class for C++ Boost library, which supports compile-time lookup</p>
 				</article>
 
 				<article>
@@ -115,7 +124,11 @@
 					<p class="subDetails">Organization open-source project</p>
 					<ul>
 						<li>Developed the frontend/backend/infrastructure of a mirror site from scratch</li>
-						<li>Implemented the syncer in Go with structured logging/metrics reporting, the frontend in Vue as a SPA. Logs sent to ELK stack at logz.io and metrics collected into Promethesus. Deployed with docker-compose with resource isolation. Errors monitored will be reported to Telegram channel.</li>
+						<li>Implemented the syncer in Go with structured logging/metrics reporting</li>
+						<li>Implemented the response webpage in Vue as an SPA with Bulma library</li>
+						<li>Logs sent to ELK stack at logz.io and metrics collected into Promethesus
+						<li>Deployed with docker-compose with resource isolation</li>
+						<li>Unavailbility automatically reported to Telegram channel</li>
 						<li>Served over 150k+ requests every day with >99.9% availability</li>
 					</ul>
 				</article>
