@@ -20,14 +20,13 @@
 		
 		<div id="name">
 			<h1 class="quickFade delayOne">Zheng Luo</h1>
-			<h2 class="quickFade delayTwo"><small>Seeking for</small> <span id="position">SDE Intern</span><small> opportunity in</small> Summer 2019</h2>
 		</div>
 		
 		<div id="contactDetails" class="quickFade delayThree">
 			<ul>
 				<li>Email: <a href="mailto:vicluo96@gmail.com" target="_blank">vicluo96@gmail.com</a></li>
 				<li>Github: <a href="https://github.com/htfy96" target="_blank">@htfy96</a></li>
-				<li>Phone (Chinese): +8615800333680</li>
+				<li>Phone: +8615800333680</li>
 				<li>Address: 9500 Gilman Dr., La Jolla, CA 92093</li>
 			</ul>
 		</div>
@@ -35,24 +34,52 @@
 	</div>
 	
 	<div id="mainArea" class="quickFade delayFour">
-		
+				
 		
 		<section>
 			<div class="sectionTitle">
-				<h1>Internships</h1>
+				<h1>Education</h1>
+			</div>
+			
+			<div class="sectionContent education">
+				<article>
+					<h2>M.S. in Computer Science at UC San Diego</h2>
+					<p class="subDetails">Sept. 2018 - Dec. 2019</p>
+				</article>
+				
+				<article>
+					<h2>B.E. in Computer Science at Shanghai Jiaotong University</h2>
+					<p class="subDetails"> Sept. 2014 - Jun. 2018, GPA 3.7/4.3 @ Top 30%</p>
+					<p>Relavant coursework: Computer Architecture, Computer Networks, Database, Operating System</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Work Experience</h1>
 			</div>
 			
 			<div class="sectionContent">
 				<article>
 					<h2>Dev Intern at Pygmal Technologies</h2>
 					<p class="subDetails">Feb. 2017 - Jan. 2018</p>
-					<p>Pygmal Technologies is a successful startup founded by an ex-Googler. Responsible for maintaining and adding new functionalities for a VR desktop environment, <a href="https://getspace.io/" target="_blank">SPACE</a>, which involves integration with CEF (Chromium Embedded Framework) as well as rendering using C++ and DirectX. Also implemented and optimized a ray tracer from scratch based on Embree, which outputs 720p results for a scene with ~300k faces on a workstation in real-time. </p>
+					<ul>
+						<li>Developed a desktop environment for VR devices & a CPU-based real-time ray tracer</li>
+						<li>Involved with Chromium Embedded Framework (CEF), DirectX, Embree. Used perf and cachegrind to analyze and optimize performance through manual vectorization/precomputation/interface refactor</li>
+						<li>Improved the fps of VRDE by 60%. Managed to make the ray-tracer render scenes in 720p/60fps.</li>
+					</ul>
 				</article>
 				
 				<article>
 					<h2>Dev Intern at Ant Financial, Alibaba Group</h2>
 					<p class="subDetails">Jun. 2016 - Sept. 2016</p>
-					<p>Mainly responsible for developing an internal Docker-based container platform, Ant Container Service (ACS). Spent most time implementing an orchestration module similar to docker-compose with Go.</p>
+					<ul>
+						<li>Contributed to an internal Docker-based container platform, Ant Container Service</li>
+						<li>Developed an orchestration module similar to docker-compose in Go for single machine with Docker API.</li>
+						<li>Module integrated into the production system, handling the lifetime of over 1k containers on financial cloud</li>
+					</ul>
 				</article>
 				
 			</div>
@@ -61,19 +88,36 @@
 
 		<section>
 			<div class="sectionTitle">
-				<h1>Projects & Contribution</h1>
+				<h1>Projects</h1>
 			</div>
 			<div class="sectionContent">
 				<article>
 					<h2><a href="https://github.com/sjtu-ai-go/go-ai" target="_blank">Go AI</a></h2> 
 					<p class="subDetails">Leader of a group of four, class project</p>
-					<p>Implemented a Go AI based on AlphaGo's first paper with UCT tree search and a policy neural network. Responsible for board class, UCT search as well as communication module with Protobuf-based serialization in C++ and Python. Beated Facebook's DarkForest(1st ver.) and GNU Go. </p>
+					<ul>
+						<li>Implemented a Go AI based on AlphaGo's first paper with UCT tree search and a policy neural network.</li>
+						<li>Responsible for board class, UCT search as well as communication module with Protobuf-based serialization in C++ and Python.</li>
+						<li>Beated Facebook's DarkForest(1st ver.) and GNU Go.</li>
+					</ul>
 				</article>
 				
 				<article>
 					<h2><a href="https://github.com/htfy96/gsoc-static-map" target="_blank">Compile-time Static Map in C++ for Boost library</a></h2>
 					<p class="subDetails">Individual contribution to open-source project, as a proposal for Boost GSoC 2017</p>
-					<p>Implemented a <code>static_map</code> class, which supports compile-time lookup with a given key, for C++ Boost library</p>
+					<ul>
+						<li>Implemented a <code>static_map</code> class for C++ Boost library</li>
+						<li>This library supports compile-time lookup with a given key with no runtime overhead.</li>
+					</ul>
+				</article>
+
+				<article>
+					<h2><a href="https://mirrors.sjtug.sjtu.edu.cn">SJTU Open-Source Mirror Site</a></h2>
+					<p class="subDetails">Organization open-source project</p>
+					<ul>
+						<li>Developed the frontend/backend/infrastructure of a mirror site from scratch</li>
+						<li>Implemented the syncer in Go with structured logging/metrics reporting, the frontend in Vue as a SPA. Logs sent to ELK stack at logz.io and metrics collected into Promethesus. Deployed with docker-compose with resource isolation. Errors monitored will be reported to Telegram channel.</li>
+						<li>Served over 150k+ requests every day with >99.9% availability</li>
+					</ul>
 				</article>
 			</div>
 			<div class="clear"></div>
@@ -86,8 +130,7 @@
 			
 			<div class="sectionContent">
 				<ul class="awards">
-					<li>Ranked 72nd in Google CodeJam Kickstart Round D</li>
-					<li>Conference paper(coauthor): <em>BAHS: A Bandwidth-Aware Heterogeneous Scheduling Approach for SDN-based Cluster Systems</em> on ISPA 2017</li>
+					<li>Conference paper: <em>BAHS: A Bandwidth-Aware Heterogeneous Scheduling Approach for SDN-based Cluster Systems</em>, Zheng Luo, Jingyun Shen (coauthur), Chentao Wu, Jie Li on ISPA 2017</li>
 					<li>Patent: <em>An Analysis on Academic Big Data Based on Paper References</em></li>
 				</ul>
 			</div>
@@ -97,41 +140,20 @@
 		
 		<section>
 			<div class="sectionTitle">
-				<h1>Key Skills</h1>
+				<h1>Skills</h1>
 			</div>
 			
 			<div class="sectionContent">
 				<ul class="keySkills">
-					<li>Writing production-level C++14/17</li>
-					<li>Linux usage and system programming</li>
+					<li>Production-level C++14/17 and Go</li>
+					<li>Linux system programming</li>
 					<li>Micro-optimization and profiling</li>
-					<li>Debugging using GDB</li>
-					<li>Writing Go</li>
 					<li>Docker usage and implementation</li>
 				</ul>
 			</div>
 			<div class="clear"></div>
 		</section>
-		
-		
-		<section>
-			<div class="sectionTitle">
-				<h1>Education</h1>
-			</div>
-			
-			<div class="sectionContent education">
-				<article>
-					<h2>M.S. in Computer Science at UC San Diego</h2>
-					<p class="subDetails">Expected to graduate in Dec. 2019 (after fall quarter) or Mar. 2020 (after winter quarter)</p>
-				</article>
-				
-				<article>
-					<h2>B.E. in Computer Science at Shanghai Jiaotong University</h2>
-					<p class="subDetails">2014 - 2018, GPA 3.7 @ Top 30%</p>
-				</article>
-			</div>
-			<div class="clear"></div>
-		</section>
+
 		
 	</div>
 </div>

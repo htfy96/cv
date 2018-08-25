@@ -22,8 +22,15 @@ html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-ser
 p {
 	font-size: 1em;
 	line-height: 1.4em;
-	margin-bottom: 12px;
 	color: #444;
+}
+
+ul {
+	color: #444;
+}
+
+.sectionContent li {
+	line-height: 1.15rem;
 }
 
 #cv {
@@ -109,15 +116,11 @@ p {
 
 section {
 	border-top: 1px solid #dedede;
-	padding: 12px 0 0;
+	padding: 12px 0;
 }
 
 section:first-child {
 	border-top: 0;
-}
-
-section:last-child {
-	padding: 20px 0 10px;
 }
 
 .sectionTitle {
@@ -133,14 +136,18 @@ section:last-child {
 .sectionTitle h1 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	font-style: italic;
-	font-size: 1.5em;
+	font-size: 1.25rem;
 	color: #cf8a05;
 }
 
 .sectionContent h2 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-size: 1.5em;
+	font-size: 1.25rem;
 	margin-bottom: -2px;
+}
+
+.sectionContent > article:not(:first-of-type) {
+	margin-top: 12px;
 }
 
 .subDetails {
@@ -163,8 +170,11 @@ em {
 	font-style: italic;
 }
 
+p:not(.subDetails) {
+	line-height: 1.15rem;
+}
+
 .awards {
-	margin-bottom: 20px;
 	color: #444;
 	list-style-type: none;
 }
@@ -370,8 +380,4 @@ em {
 	-webkit-animation-delay: 0, 2.5s;
 	-moz-animation-delay: 0, 2.5s;
 	animation-delay: 0, 2.5s;
-}
-
-.education h2 {
-	font-size: 1.25rem;
 }
